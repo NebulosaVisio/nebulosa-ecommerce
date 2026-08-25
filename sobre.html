@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0A1628">
+    <title>Sobre — Nebulosa Distribuidora</title>
+    <meta name="description" content="Conheça a Nebulosa Distribuidora. Há mais de 15 anos fornecendo cabos e condutores elétricos com qualidade, agilidade e os melhores preços.">
+    <link rel="canonical" href="https://www.example.com/sobre.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Nebulosa Distribuidora">
+    <meta property="og:title" content="Sobre — Nebulosa Distribuidora">
+    <meta property="og:description" content="Conheça a Nebulosa Distribuidora. Há mais de 15 anos no mercado de materiais elétricos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- TRUST BAR -->
+    <div class="trust-bar" id="trust-bar">
+        <div class="container trust-bar__inner" id="trust-bar-items"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+        <div class="container site-header__inner">
+            <a href="index.html" class="site-header__logo" id="site-logo">Nebulosa<span class="logo-dot"></span></a>
+            <nav class="site-header__nav" id="main-nav" aria-label="Navegação principal">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="produtos.html" class="nav-link">Produtos</a>
+                <a href="sobre.html" class="nav-link active">Sobre</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </nav>
+            <div class="site-header__search">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="header-search" placeholder="Buscar produtos..." autocomplete="off" aria-label="Buscar produtos">
+            </div>
+            <div class="site-header__actions">
+                <button class="cart-toggle" id="cart-toggle" aria-label="Carrinho de orçamento">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-toggle__badge hidden" id="cart-badge">0</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+        <div class="mobile-menu__header">
+            <span class="site-header__logo">Nebulosa<span class="logo-dot"></span></span>
+            <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Fechar menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <a href="index.html" class="mobile-menu__link">Início</a>
+        <a href="produtos.html" class="mobile-menu__link">Produtos</a>
+        <a href="sobre.html" class="mobile-menu__link">Sobre</a>
+        <a href="contato.html" class="mobile-menu__link">Contato</a>
+    </nav>
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>Quem Somos</h1>
+            <p>Há mais de 15 anos fornecendo soluções em condutores elétricos para todo o Brasil.</p>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="section">
+        <div class="container">
+            <div class="about-stats" id="about-stats">
+                <!-- Rendered by JS from config.stats -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <section class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-content__text">
+                    <h2>Nossa História</h2>
+                    <p>Fundada com o objetivo de simplificar o acesso a materiais elétricos de qualidade, a Nebulosa Distribuidora se consolidou como referência no segmento de cabos e condutores.</p>
+                    <p>Atendemos desde pequenas instalações residenciais até grandes obras industriais, oferecendo um catálogo completo com mais de 500 produtos de diferentes categorias.</p>
+                    <p>Nossa equipe técnica está preparada para orientar na escolha do produto ideal para cada aplicação, garantindo segurança e conformidade com as normas vigentes.</p>
+                </div>
+                <div class="about-content__visual">
+                    <svg viewBox="0 0 120 120" fill="none" style="width:100px;height:100px;opacity:.3">
+                        <rect x="20" y="95" width="80" height="8" rx="4" fill="#94a3b8"/>
+                        <path d="M35 95V40c0-2.2 1.8-4 4-4h42c2.2 0 4 1.8 4 4v55" stroke="#94a3b8" stroke-width="3"/>
+                        <circle cx="60" cy="25" r="8" stroke="#f97316" stroke-width="2.5" fill="none"/>
+                        <line x1="60" y1="33" x2="60" y2="40" stroke="#f97316" stroke-width="2.5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section" style="background:var(--bg-alt);">
+        <div class="container about-values">
+            <h2 class="section-title" style="text-align:center;margin-bottom:var(--sp-12);">Nossos Valores</h2>
+            <div class="about-values__grid">
+                <div class="about-value reveal">
+                    <div class="about-value__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h3>Qualidade</h3>
+                    <p>Trabalhamos apenas com produtos certificados e que atendem às normas ABNT e INMETRO.</p>
+                </div>
+                <div class="about-value reveal">
+                    <div class="about-value__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Agilidade</h3>
+                    <p>Respostas em até 24 horas e logística otimizada para entrega em todo o território nacional.</p>
+                </div>
+                <div class="about-value reveal">
+                    <div class="about-value__icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Parceria</h3>
+                    <p>Acreditamos em relacionamentos de longo prazo, construídos com transparência e confiança.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container cta-section__content">
+            <h2>Vamos trabalhar juntos?</h2>
+            <p>Entre em contato com nossa equipe e descubra as melhores condições para o seu projeto.</p>
+            <div class="cta-section__actions">
+                <a href="contato.html" class="btn btn-primary btn-lg">Fale Conosco</a>
+                <a href="#" class="btn btn-whatsapp btn-lg" id="cta-whatsapp" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.111.553 4.093 1.516 5.814L0 24l6.335-1.652A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="site-footer">
+        <div class="container">
+            <div class="site-footer__grid">
+                <div class="site-footer__col">
+                    <div class="site-footer__logo">Nebulosa<span class="logo-dot"></span></div>
+                    <p class="site-footer__desc" id="footer-desc">Soluções em condutores elétricos para indústria e construção civil.</p>
+                </div>
+                <div class="site-footer__col">
+                    <h4>Navegação</h4>
+                    <ul class="site-footer__links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__col">
+                    <h4>Categorias</h4>
+                    <ul class="site-footer__links" id="footer-categories"></ul>
+                </div>
+                <div class="site-footer__col">
+                    <h4>Contato</h4>
+                    <div id="footer-contact"></div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <p>&copy; <span id="footer-year">2026</span> Nebulosa Distribuidora. Todos os direitos reservados.</p>
+                <div class="site-footer__legal">
+                    <a href="termos.html">Termos</a>
+                    <a href="privacidade.html">Privacidade</a>
+                    <a href="lgpd.html">LGPD</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.111.553 4.093 1.516 5.814L0 24l6.335-1.652A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.855 0-3.618-.502-5.158-1.414l-.37-.22-3.834 1.005 1.022-3.734-.24-.382A9.713 9.713 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
+        <span class="whatsapp-float__tooltip">Fale conosco</span>
+    </a>
+
+    <div class="toast-container" id="toast-container"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>

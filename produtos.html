@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0A1628">
+    <title>Produtos — Nebulosa Distribuidora</title>
+    <meta name="description" content="Catálogo completo de cabos e condutores elétricos. Cabos de alumínio, comando, manga, energia, AF e especiais. Solicite seu orçamento.">
+    <link rel="canonical" href="https://www.example.com/produtos.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Nebulosa Distribuidora">
+    <meta property="og:title" content="Produtos — Nebulosa Distribuidora">
+    <meta property="og:description" content="Catálogo completo de cabos e condutores elétricos com mais de 500 produtos.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ========== TRUST BAR ========== -->
+    <div class="trust-bar" id="trust-bar">
+        <div class="container trust-bar__inner" id="trust-bar-items"></div>
+    </div>
+
+    <!-- ========== HEADER ========== -->
+    <header class="site-header" id="site-header">
+        <div class="container site-header__inner">
+            <a href="index.html" class="site-header__logo" id="site-logo">Nebulosa<span class="logo-dot"></span></a>
+            <nav class="site-header__nav" id="main-nav" aria-label="Navegação principal">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="produtos.html" class="nav-link active">Produtos</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </nav>
+            <div class="site-header__search">
+                <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="text" id="header-search" placeholder="Buscar produtos..." autocomplete="off" aria-label="Buscar produtos">
+                <button class="search-clear hidden" id="search-clear" aria-label="Limpar busca">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="site-header__actions">
+                <button class="cart-toggle" id="cart-toggle" aria-label="Carrinho de orçamento">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-toggle__badge hidden" id="cart-badge">0</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+        <div class="mobile-menu__header">
+            <span class="site-header__logo">Nebulosa<span class="logo-dot"></span></span>
+            <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Fechar menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <a href="index.html" class="mobile-menu__link">Início</a>
+        <a href="produtos.html" class="mobile-menu__link">Produtos</a>
+        <a href="sobre.html" class="mobile-menu__link">Sobre</a>
+        <a href="contato.html" class="mobile-menu__link">Contato</a>
+    </nav>
+
+    <!-- ========== PAGE HEADER ========== -->
+    <section class="page-header">
+        <div class="container">
+            <nav class="breadcrumb" id="products-breadcrumb" aria-label="Breadcrumb">
+                <a href="index.html">Início</a>
+                <span class="breadcrumb__sep">›</span>
+                <span class="breadcrumb__current" id="breadcrumb-current">Produtos</span>
+            </nav>
+            <h1 id="page-title">Catálogo de Produtos</h1>
+            <p id="page-subtitle">Encontre o cabo ideal para seu projeto. Filtre por categoria, subcategoria ou pesquise pelo nome.</p>
+        </div>
+    </section>
+
+    <!-- ========== CATEGORY BAR ========== -->
+    <div class="category-bar" id="category-bar">
+        <div class="container">
+            <div class="category-bar__scroll" id="category-pills">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== CATALOG ========== -->
+    <section class="catalog section" id="catalogo">
+        <div class="container">
+            <div class="catalog__toolbar">
+                <div class="catalog__results" id="results-count">Carregando...</div>
+                <div class="catalog__sort">
+                    <label for="sort-select">Ordenar:</label>
+                    <select id="sort-select" class="sort-select" aria-label="Ordenar produtos">
+                        <option value="az">A → Z</option>
+                        <option value="za">Z → A</option>
+                        <option value="categoria">Categoria</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Rendered by JS -->
+            </div>
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="cta-section">
+        <div class="container cta-section__content">
+            <h2>Não encontrou o que precisa?</h2>
+            <p>Fale com nossa equipe técnica. Atendemos pedidos especiais e fazemos orçamentos sob medida.</p>
+            <div class="cta-section__actions">
+                <a href="contato.html" class="btn btn-primary btn-lg">Fale Conosco</a>
+                <a href="#" class="btn btn-whatsapp btn-lg" id="cta-whatsapp" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.111.553 4.093 1.516 5.814L0 24l6.335-1.652A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer" id="site-footer">
+        <div class="container">
+            <div class="site-footer__grid">
+                <div class="site-footer__col">
+                    <div class="site-footer__logo">Nebulosa<span class="logo-dot"></span></div>
+                    <p class="site-footer__desc" id="footer-desc"></p>
+                </div>
+                <div class="site-footer__col">
+                    <h4>Navegação</h4>
+                    <ul class="site-footer__links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="site-footer__col">
+                    <h4>Categorias</h4>
+                    <ul class="site-footer__links" id="footer-categories"></ul>
+                </div>
+                <div class="site-footer__col">
+                    <h4>Contato</h4>
+                    <div id="footer-contact"></div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <p>&copy; <span id="footer-year">2026</span> Nebulosa Distribuidora. Todos os direitos reservados.</p>
+                <div class="site-footer__legal">
+                    <a href="termos.html">Termos</a>
+                    <a href="privacidade.html">Privacidade</a>
+                    <a href="lgpd.html">LGPD</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.111.553 4.093 1.516 5.814L0 24l6.335-1.652A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-1.855 0-3.618-.502-5.158-1.414l-.37-.22-3.834 1.005 1.022-3.734-.24-.382A9.713 9.713 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
+        <span class="whatsapp-float__tooltip">Fale conosco</span>
+    </a>
+
+    <div class="toast-container" id="toast-container"></div>
+    <script src="js/app.js"></script>
+</body>
+</html>

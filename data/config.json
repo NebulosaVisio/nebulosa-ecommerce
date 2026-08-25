@@ -1,0 +1,156 @@
+{
+  "empresa": {
+    "nome": "Nebulosa",
+    "nomeCompleto": "Nebulosa Distribuidora",
+    "slogan": "Soluções em Condutores Elétricos",
+    "cnpj": "",
+    "descricao": "Fornecemos fios, cabos e condutores elétricos com qualidade e agilidade para indústria, construção civil e mineração.",
+    "descricaoCurta": "Distribuidora de cabos e condutores elétricos"
+  },
+  "seo": {
+    "titleTemplate": "{page} — Nebulosa Distribuidora",
+    "defaultTitle": "Nebulosa — Cabos e Condutores Elétricos",
+    "defaultDescription": "Catálogo completo de cabos e condutores elétricos. Cabos de alumínio, comando, manga, energia, AF e especiais. Solicite seu orçamento.",
+    "keywords": "cabos elétricos, condutores, fios, cabo de alumínio, cabo de cobre, cabo de comando, material elétrico, distribuidora",
+    "ogImage": "",
+    "domain": "https://www.example.com"
+  },
+  "contato": {
+    "whatsapp": "551121414999",
+    "telefone": "(11) 2141-4999",
+    "email": "armando.rios@viacabos.com.br",
+    "endereco": "São Paulo, SP — Brasil",
+    "horario": "Seg a Sex, 8h às 18h"
+  },
+  "redesSociais": {
+    "instagram": "#",
+    "linkedin": "#",
+    "facebook": ""
+  },
+  "branding": {
+    "corPrimaria": "#0A1628",
+    "corSecundaria": "#1B3A5C",
+    "corAcento": "#FF6B2C",
+    "corAcentoHover": "#E55A1B",
+    "corTexto": "#1a1a2e",
+    "corTextoClaro": "#6b7280",
+    "corFundo": "#F4F6F9",
+    "corBranco": "#FFFFFF",
+    "corBorda": "#E2E8F0",
+    "gradientStart": "#0A1628",
+    "gradientEnd": "#1B3A5C",
+    "fonteTitulos": "Plus Jakarta Sans",
+    "fonteCorpo": "Inter",
+    "logo": "",
+    "favicon": "",
+    "bannerHome": ""
+  },
+  "trust": [
+    {
+      "icone": "truck",
+      "texto": "Entrega para todo o Brasil",
+      "destaque": "Frete Rápido"
+    },
+    {
+      "icone": "shield",
+      "texto": "Produtos certificados e com garantia",
+      "destaque": "Garantia"
+    },
+    {
+      "icone": "credit-card",
+      "texto": "Pix, boleto e cartão em até 6x",
+      "destaque": "Pagamento Flexível"
+    },
+    {
+      "icone": "headphones",
+      "texto": "Equipe especializada pronta para ajudar",
+      "destaque": "Atendimento"
+    }
+  ],
+  "stats": [
+    { "valor": "500+", "label": "Produtos" },
+    { "valor": "6", "label": "Categorias" },
+    { "valor": "15+", "label": "Anos de Mercado" },
+    { "valor": "24h", "label": "Resposta" }
+  ],
+  "whatsappMensagem": "Olá! Gostaria de solicitar um orçamento para os seguintes produtos:\n\n",
+  "formEndpoint": "https://formsubmit.co/armando.rios@viacabos.com.br",
+  "categorias": [
+    {
+      "id": "cabos-aluminio",
+      "nome": "Cabos de Alumínio",
+      "icone": "zap",
+      "descricao": "Cabos multiplexados, singelos e de média tensão em alumínio",
+      "subcategorias": [
+        { "id": "multiplexado-duplex", "nome": "Multiplexado Duplex" },
+        { "id": "multiplexado-triplex", "nome": "Multiplexado Triplex" },
+        { "id": "multiplexado-quadruplex", "nome": "Multiplexado Quadruplex" },
+        { "id": "singelo", "nome": "Singelo" },
+        { "id": "singelo-dupla-isolacao", "nome": "Singelo Dupla Isolação" },
+        { "id": "protegido-15kv", "nome": "Protegido 15kV" },
+        { "id": "media-tensao", "nome": "Média Tensão" }
+      ]
+    },
+    {
+      "id": "cabos-comando",
+      "nome": "Cabos de Comando",
+      "icone": "settings",
+      "descricao": "Cabos para automação, painéis, comando e controle industrial",
+      "subcategorias": [
+        { "id": "sem-blindagem", "nome": "Sem Blindagem" },
+        { "id": "blindado-fita-aluminizada", "nome": "Blindado Fita Aluminizada" },
+        { "id": "blindado-malha-cobre", "nome": "Blindado Malha de Cobre" },
+        { "id": "colorido", "nome": "Colorido" },
+        { "id": "com-via-verde", "nome": "Com Via Verde" },
+        { "id": "hepr", "nome": "HEPR" }
+      ]
+    },
+    {
+      "id": "cabos-manga",
+      "nome": "Cabos Manga",
+      "icone": "cable",
+      "descricao": "Cabos manga para instrumentação e controle em AWG",
+      "subcategorias": [
+        { "id": "sem-blindagem", "nome": "Sem Blindagem" },
+        { "id": "blindado-fita-aluminizada", "nome": "Blindado Fita Aluminizada" },
+        { "id": "blindado-malha-cobre", "nome": "Blindado Malha de Cobre" }
+      ]
+    },
+    {
+      "id": "cabos-energia",
+      "nome": "Cabos de Energia",
+      "icone": "battery",
+      "descricao": "Cabos de potência e protegidos para transmissão de energia",
+      "subcategorias": [
+        { "id": "potencia", "nome": "Potência" },
+        { "id": "protegido-cobre", "nome": "Protegido Cobre" }
+      ]
+    },
+    {
+      "id": "cabos-especiais",
+      "nome": "Cabos Especiais",
+      "icone": "shield",
+      "descricao": "Cabos para incêndio, instrumentação, silicone, solda, rede e comunicação",
+      "subcategorias": [
+        { "id": "incendio", "nome": "Incêndio" },
+        { "id": "instrumentacao", "nome": "Instrumentação" },
+        { "id": "silicone", "nome": "Silicone" },
+        { "id": "solda", "nome": "Solda" },
+        { "id": "rede", "nome": "Rede" },
+        { "id": "profibus", "nome": "Profibus" },
+        { "id": "modbus", "nome": "Modbus" }
+      ]
+    },
+    {
+      "id": "cabos-af",
+      "nome": "Cabos AF",
+      "icone": "radio",
+      "descricao": "Cabos AFT, AFS e AFD para automação e instrumentação industrial",
+      "subcategorias": [
+        { "id": "aft", "nome": "AFT" },
+        { "id": "afs", "nome": "AFS" },
+        { "id": "afd", "nome": "AFD" }
+      ]
+    }
+  ]
+}
